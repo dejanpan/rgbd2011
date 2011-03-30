@@ -1,0 +1,101 @@
+Title: FAB-MAP 3D: Topolocial Mapping with Spatial and Visual Appearance (R. Paul and P. Newman)
+
+Review:
+The paper presents an extension of the FABMAP approach. The authors additionally include range information to learn 3D distances between visual words. This paper seems to fit well in the scope of the workshop, i.e., it uses both RGB-data (SURF) and depth (3D distances between features).
+
+Comments to the Authors:
+The abstract reads nicely. May I suggest to increase the font size in the figures? Also, I would add at least one reference for further reading. I was also wondering about the computation time, i.e., the additional overhead that is introduced in model learning and evaluation compared to FAB-MAP?
+
+----------------------------------------------------------------------------------
+
+Title: Real-time 3D visual SLAM with a hand-held RGB-D camera (N. Engelhard, F. Endres, J. Hess, J. Sturm, W. Burgard)
+
+Review:
+The paper describes an open-source implementation of visual SLAM using the Microsoft Kinect. The images and videos show promising results. Further, the authors plan to give a live demo during the workshop. 
+
+----------------------------------------------------------------------------------
+
+Title: 2D/3D Object Categorization for Task Based Grasping (M. Madry, D. Song, D. Kragic)
+
+Review: 
+The authors propose a system to categorize objects based on three different features, exploiting both RGB and depth data. Their approach uses both opponentSIFT, HoG and FPFH features. These features are integrated to predict the object category. Based on this, a suitable grasp is generated. From the abstract, it remains unclear how the different features are integrated. Yet, the authors present a full system from perception to object manipulation. This paper fits well in the scope of this workshop as it exploits both RGB and depth data for object classification.
+
+----------------------------------------------------------------------------------
+
+Title: The Articulated Scene Model: Model-less Priors for Robot Object Learning (A. Swadzba, N. Beuter, S. Wachsmuth, F. Kummert)
+
+Review:
+In this paper, the authors describe an approach to segment scenes into (a) the static background, (b) moveable objects and (c) moveable entities. For tracking objects, they apply a weak cylindrical model. Also, the authors propose to give a live demo of their system. This work is interesting for the workshop because it deals with the analysis of dynamic scenes using range data. The videos are somewhat minimalistic, but demonstrate the functionality of the system well. 
+
+----------------------------------------------------------------------------------
+
+Title: A test bench to improve registration using RGB-D sensors (F. Pomerleau, S. Magnenat, F. Colas, M. Liu, R. Siegwart)
+
+Review:
+In this abstract, a system is described that registers point clouds against reference point clouds. The system works in real-time and, from the contributed videos, looks very robust. Further, the authors have released various datasets with ground-truth pose information for benchmarking. Both the tracker and the dataset are highly relevant for (some of) the participants of the workshop.
+
+----------------------------------------------------------------------------------
+
+Title: Autonomous Corridor Flight of a UAV Using an RGB-D Camera (S. Lange, N. Suenderhauf, P. Neubert, S. Drews, P. Protzel)
+
+Review:
+The authors describe how they achieve an autonomous flight in a corridor with a quadcopter using the Kinect camera. The approach is relatively simple, i.e., the depth images is downsampled, planes are extracted and used to keep the quadrotor in the middle of the corridor. The software has been published as open-source. This work is interesting as it shows that also embeddded devices can use the Kinect for pose control and navigation. However, the environment in which this system is applicable is somewhat restricted, i.e., at the moment the authors assume corridor-like environments. I was wondering how this approach could be extended to more general (indoor) environments.
+
+==================================================================================
+
+Title: RGB-D object recognition and localization with clutter and occlusions (F. Tombari, S. Salti, L. Di Stefano)
+
+Review:
+The authors propose a system for object recognition and localization based a novel 3D feature description termed CSHOT combining color and shape. Given a set of training images, the geometric position of each feature on the object is learned. A 3D Hough transform is then applied to localize the found object in the scene. 
+The video shows the object detection and localization in action. In case this paper is accepted, it would be cool if the authors show a live demo of their system at the workshop. From their references, I can see that the authors have much prior work in this area, so it seems that the theory behier their approach is backed up well. 
+
+----------------------------------------------------------------------------------
+
+Title: Acting and Interacting in the Real World (J. Bohg, N. Bergstrom, M. Bjorkman, D. Kragic)
+
+Review:
+This paper uses color and depth information in a combined approach to segment objects from the background. In the second part, the authors propose to complete partial views by assuming that the objects in the scene are symmetric. In particular, the second part sounds interesting and might also generalize to other objects and symmetry classes. 
+
+The authors might want to look at the following paper (in case they did not know about it), which considers rotationally symmetric objects:
+
+Zoltan-Csaba Marton, Dejan Pangercic, Nico Blodow, Jonathan Kleinehellefort, Michael Beetz, General 3D Modelling of Novel Objects from a Single View, 2010, 2010 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+
+----------------------------------------------------------------------------------
+
+Title: Efficient surface and feature estimation in RGBD (Z.-C. Marton, D. Pangercic, M. Beetz)
+
+Review:
+The authors combine two features (GRSD and ColorCHLAC) and train an object classifier based on SVMs. From the abstract alone, the integration (and weighting) of these two distinct components remains unclear. The evaluation looks thorough (63 different) objects. Personally, I find the figures somewhat confusing and think that they could be simplified. Also, the results (76% recognition rate) are not too impresive -- maybe the dataset was very challenging, i.e., consisting of many similar objects. If so, this could be stressed/discussed more in the final version of the abstract.
+
+----------------------------------------------------------------------------------
+
+Title: Outdoor terrain traversability analysis for robot navigation using a time-of-flight camera (G. De Cubber, D. Doroftei, H. Sahli, Y. Baudoin)
+
+Review:
+This paper describes a system for traversability analysis for a mobile robot. The authors combine both information from the time-of-flight camera and a stereo camera. The approach seems to integrate the depth information from both sensors and the color information (in LAB space) to classify pixels as traversable or non-traversable. It might be because of the one-page limit, but the approach remains somewhat unclear. Also, the authors do not well motivate/show why two depth sensors are needed as both the cameras face downwards.
+
+----------------------------------------------------------------------------------
+
+Title: 2.5D Local Feature Matching System
+
+Review:
+The authors pursue the idea of improving SIFT features by exploiting the local geometry. They propose to rectify the image patches based on the plane normal at the interest point (affine transformation) or to unwarp the image according to the depth map (projective transformation). The authors report that the performance decreases with this pre-processing. Despite these negative results, I would like to encourage the authors to try other feature descriptors. SIFT does already do a lot of pre-processing to become invariant against the local geometry. Maybe the power of this approach is visible better if a simpler feature descriptor is used (maybe simply image correlation). Therefore, I propose to accept this paper as a poster to give the authors the opportunity to discuss this approach further.
+
+----------------------------------------------------------------------------------
+
+Title: Interaction between pointclouds and camera images for human motion capture (K. Buys)
+
+Review:
+There are several abbrevations that are not well explained or referenced. What is PF model validation, the GrabCut algorithm or a MakeHuman avatar? The main focus of this paper remains unclear. To summarize: An RGB-D camera is used to segment a human, a human model is fit according to this data from 5 calibration poses, a human model is fit to the data from a sensor matrass. In the second part, the author outlines some work done for Robotcup@home. 
+
+The sensor matrass seems to record a low-resolution point cloud of people laying on it. This sounds interesting, but unfortunately no images are provided. In case this paper gets accepted, I would propose to limit the scope to the human pose tracking with the RGB-D sensor and the sensor mattress.
+
+
+----------------------------------------------------------------------------------
+
+Title: 3D object localization using superquadric models with a Kinect sensor (N. Biasi, I. Afanasyev, A. Fornaser, L. Baglivo, M. De Cecco)
+
+Review:
+This paper describes a system for pose estimation of simple geometric objects with known shapes. The objects are modelled as superquadrics. The authors use the depth channel to estimate the pose, and subsequently verify the pose using the edges in the color image. I was wondering why these two steps are separated. Wouldn't it be possible to devise an integrated cost metric that uses both color and depth? Unfortunately, no results are presented and no further references are given. 
+
+

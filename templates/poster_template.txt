@@ -1,0 +1,40 @@
+RGB-D Workshop on 3D Perception in Robotics
+
+Dear Authors,
+
+It is our pleasure to inform you that your submission has been
+accepted for publication and poster presentation at the Eurobotics Forum:
+RGB-D workshop on 3D perception in robotics. Congratulations!
+
+Due to the large number of submissions and the half-day nature of the
+workshop, we decided to split the presentations into six talks and a
+combined poster and demo session. We will fix the final program of the
+workshop in the next few days and update the website accordingly.
+
+Please revise your paper according to the reviewer comments below for
+inclusion in the online workshop proceedings. The deadline for
+submitting the camera ready version is March 27th.
+
+If you have planned to give a live demonstration of your approach,
+please let us know what your requirements are (e.g., space, tables,
+power chords..).
+
+We are planning to go out for dinner after the workshop. If you are
+interested to join, please confirm your participation so that we can
+reserve for the appropriate number of persons at the restaurant.
+
+
+Best regards,
+The Organizers
+
+Workshop Website:
+http://ias.cs.tum.edu/events/rgbd2011
+
+---------------
+Title
+Author
+Accepted for poster presentation
+---------------
+Review 1
+---------------
+Review 2

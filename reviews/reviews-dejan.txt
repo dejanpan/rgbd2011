@@ -1,0 +1,169 @@
+Title: FAB-MAP 3D: Topolocial Mapping with Spatial and Visual Appearance (R. Paul and P. Newman)
+technical soundness: 5/5
+demo: 0/5
+clarity of description: 5/5
+Review:  
+The paper presents topological mapping  by learning muldimodal distributions using KDE. 
+Comments to Author:
+I would recommend authors to state how the spatial ranges are obtained and what
+is the run time performance of the system. In Figure 1, left - can you denote what the 
+different size of circles represent?
+
+----------------------------------------------------------------------------------
+
+Title: Real-time 3D visual SLAM with a hand-held RGB-D camera (N. Engelhard, F. Endres, J. Hess, J. Sturm, W. Burgard)
+technical soundness: 5/5
+demo: 5/5
+clarity of description: 5/5
+Review: 
+The paper presents how to generate colored 3D models of objects of objects and indoor scenes
+Comments to Author: 
+Could you please comment on how do you plan to evaluate the system?
+
+----------------------------------------------------------------------------------
+
+Title: 2D/3D Object Categorization for Task Based Grasping (M. Madry, D. Song, D. Kragic)
+technical soundness: 3/5
+demo: ?
+clarity of description: 4/5
+Review: 
+The paper presents multi-cue-based object categorization (or classification) for the purpose of transferring the grasping knowledge.  
+Comments to Author:
+Why did you select the proposed selection of features over any other features? Could you also please comment 
+how is the categorization of objects exactly performed (rule based, through classifier?).
+
+----------------------------------------------------------------------------------
+
+Title: The Articulated Scene Model: Model-less Priors for Robot Object Learning (A. Swadzba, N. Beuter, S. Wachsmuth, F. Kummert)
+technical soundness: 4/5
+demo: 5/5
+clarity of description: 3/5
+Review: 
+The paper presents scene modeling through BG/FG subtraction.  
+Comments to Author:
+Why is Entity != Object? How is your approach different from a simple segmentation of point cloud differences? 
+How can the articulation model of e.g. drawer be generated? Also, I found referred videos to lack some annotations.
+
+----------------------------------------------------------------------------------
+
+Title: A test bench to improve registration using RGB-D sensors (F. Pomerleau, S. Magnenat, F. Colas, M. Liu, R. Siegwart)
+technical soundness: 5/5
+demo: ?
+clarity of description: 4/5
+Review: 
+The paper provides 2 main contributions: real-time tracker of the pose for RGBD sensors and Kinect dataset associated with the ground truth from Vicon. 
+Comments to Author:
+Looking at the wiki page for cloud_matcher I found a statement that "allowing a complete configuration of the registration chain through 
+parameters leads to the a real-time tracker". Could you please clarify this? With respect to the dataset, it would help if you provided 
+videos/images for a quick preview.
+
+----------------------------------------------------------------------------------
+
+Title: Autonomous Corridor Flight of a UAV Using an RGB-D Camera (S. Lange, N. Suenderhauf, P. Neubert, S. Drews, P. Protzel)
+technical soundness: 4/5
+demo: ?
+clarity of description: 3/5
+Review: 
+The paper presents a corridor flight of a UAV using segmented data from RGBD. 
+Comments to Author:
+RGB component does not seem to be used. An impressive overall system, but what is there new in terms of RGBD data processing
+that goes beyond algorithms implemented in PCL? How does the specialized downsampling algorithm work? CUDA?
+It also seem that flying in non-corridor like rooms would not be possible with the current approach
+
+----------------------------------------------------------------------------------
+
+Title: RGB-D object recognition and localization with clutter and occlusions (F. Tombari, S. Salti, L. Di Stefano)
+technical soundness: 5/5
+demo: ?
+clarity of description: 4/5
+Review: 
+The paper presents Object Recognition and Localization Pipeline using CSHOT - a feature that captures depth and RGB information.
+Comments to Author:
+On runtime 10 seconds - for how many objects, how many points/per object?
+Could you also please comment about how sensitive is the approach to lighting changes?
+
+----------------------------------------------------------------------------------
+
+Title: Acting and Interacting in the Real World (J. Bohg, N. Bergstrom, M. Bjorkman, D. Kragic)
+technical soundness: 5/5
+demo: ?
+clarity of description: 4/5
+Review: 
+The paper presents object segmentation and reconstruction in the presence of clutter using symetry prior and plausibility rank.
+Comments to Author:
+On "robot now might want to know whether it has seen object before" - how do you memmorize the object's appearance?
+
+----------------------------------------------------------------------------------
+
+Title: Efficient surface and feature estimation in RGBD (Z.-C. Marton, D. Pangercic, M. Beetz)
+technical soundness: 5/5
+demo: 5/5
+clarity of description: 3/5
+Review: The paper presents following 3 points: a) smoothing of noisy data with MLS, b) RSD and GRSD features and, finally, c) feature that captures 
+2D as well as 3D properties of objects.
+
+----------------------------------------------------------------------------------
+
+Title: Outdoor terrain traversability analysis for robot navigation using a time-of-flight camera (G. De Cubber, D. Doroftei, H. Sahli, Y. Baudoin)
+technical soundness: 3/5
+demo: ?
+clarity of description: 3/5
+Review:  
+The paper presents an outdoor traversibility analysis using TOF camera. 
+Comments to Author:
+I have hard to believe that PMDTec would deliver any useful information outdoors. 
+How does the terrain classification function exactly look like?
+What does it depend on? Also it is not clear how exactly the RGB and the depth information is combined.
+
+----------------------------------------------------------------------------------
+
+Title: 2.5D Local Feature Matching System
+technical soundness: 4/5
+demo: ?
+clarity of description: 3/5
+Review:
+The paper compares local features (SIFT, SIFT with an affine pose corrected sample patch and SIFT with a projective corrected sample patch)
+in the application of object matching under successive rotations.
+Comments to Author:
+Since both proposed fetures get outperformed by standard SIFT - what is the take home messages of the paper? 
+I would also suggest peeking into the SIFT implementation for range images in Point Cloud Library.
+
+----------------------------------------------------------------------------------
+
+Title: Interaction between pointclouds and camera images for human motion capture (K. Buys
+technical soundness: 2/5
+demo: 0
+clarity of description: 2/5
+Review:  
+The paper aims at presenting i) the capture of human motions using RGBD images and ii) detection
+of objects and persons in Robocup@home contest.
+Comments to Author: The paper lacks details and results coming from the proposed algorithms. 
+Furthermore, it introduces never expanded acryonyms (e.g. PF). It would also help
+if you explain what is the application the pose estimation of a sleeping person is
+used for and what how concretely do you plan to tackle problems in the Robocup@home contest.
+
+----------------------------------------------------------------------------------
+
+Title: 3D object localization using superquadric models with a Kinect sensor (N. Biasi, I. Afanasyev, A. Fornaser, L. Baglivo, M. De Cecco)
+technical soundness: 2/5
+demo: 0
+clarity of description: 2/5
+Review:  
+The paper presents object recognition(?) and localization using superquadric models.
+Comments to Author:
+While the approach is definitely technically sound it has on the other hand been vastly exploited in the area
+of object detection and segmentation (e.g.: Efﬁcient 3D Object Detection by Fitting Superquadrics to Range Image
+Data for Robot’s Object Manipulation, Georg Biegelbauer and Markus Vincze). Also, paper lacks evidences 
+of method's working in form of e.g. figures and/or videos.
+
+----------------------------------------------------------------------------------
+
+Title: Evaluation of 3D Model Accuracy for Automated Unloading of Containers (Alice Kirchheim*, Todor Stoyanov#, Athanasia Louloudi#, Martin Magnusson#, Achim Lilienthal#)
+technical soundness: 4/5
+demo: 0
+clarity of description: 3/5
+Review:  
+The paper presents a 3D perception pipeline for the purpose of unloading of containers - a method that author use in order to evaluate the model quality.
+Comments to Author:
+Could you please provide captions for the Figure, especually the bottom two images? Which TOF-cameras did you evaluate in particular?
+

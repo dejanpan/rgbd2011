@@ -1,0 +1,32 @@
+RGB-D Workshop on 3D Perception in Robotics
+
+Dear authors,
+
+Unfortunately, we have to inform you that your submission to the
+Eurobotics Forum: RGB-D workshop on 3D perception in robotics has been
+rejected based on the reviewers' comments.
+
+Due to the large number of submissions and the half-day nature of the
+workshop we were unfortunately unable to accommodate all submissions.
+
+We will fix the final program of the workshop in the next few days
+and update the website accordingly. We are looking forward to seeing
+you in Vasteras on April 8th.
+
+Best regards,
+The Organizers
+
+Workshop Website:
+http://ias.cs.tum.edu/events/rgbd2011 
+Workshop Website:
+http://ias.cs.tum.edu/events/rgbd2011
+
+---------------
+Title
+Author
+Rejected based on the reviewer's comments
+---------------
+Review 1
+---------------
+Review 2
+

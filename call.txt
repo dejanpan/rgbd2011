@@ -1,0 +1,44 @@
+Title:
+RGB-D Workshop on 3D Perception in Robotics
+
+Venue:
+Västerås, Sweden
+
+Abstract:
+In the past year, novel camera systems like Microsoft's Kinect that provide both color and dense depth images became readily available. There are great expectations that such systems will lead to a boost of new applications in the field of 3D perception which particularly relevant for robots operating in unstructured environments and under real-world conditions. Research fields that are expected to benefit from RGB-D-based perception include 3D mapping and localization, path planning, navigation, object recognition, people tracking, activity recognition, and human-robot interaction. 
+
+The goal of this workshop is to bring together researchers from robotics and computer vision to present and discuss current approaches on 3D perception using RGB-D sensors in robotics. The key outcomes of the workshop will be to establish an overview over a) the currently available sensor hardware, b) the state-of-the-art in 3D perception, c) the possible applications in industry,  and d) stimulate a discussion of the key challenges and opportunities of RGB-D-based perception in robotics.
+
+Topics:
+We solicit one-page A4 paper abstract submissions, optionally accompanied by a video both of which 
+will be reviewed by the program committee. Topics of interest include (but are not limited to):
+- sensor technology, calibration and data pre-processing,
+- RGB-D interest points and feature descriptors,
+- SLAM and semantic mapping,
+- object recognition and localization,
+- people tracking and activity recognition, 
+- navigation,
+- industrial applications.
+We would especially like to encourage live demos either during the talks or in a special demo session
+and plan to foster the discussion between the participants in a plenary discussion.
+
+Schedule (4 hours):
+- 6-8 presentations (20 min/presentation)
+- coffee break (15 min)
+- two invited talks (30 min)
+- live demos (30 min)
+- plenum discussion (30 min)
+
+Organizers:
+Michael Beetz
+Wolfram Burgard
+Daniel Cremers
+Dejan Pangercic
+Jürgen Sturm
+
+Website:
+TBD
+
+Contact:
+dejan.pangercic@cs.tum.edu
+sturm@informatik.uni-freiburg.de
